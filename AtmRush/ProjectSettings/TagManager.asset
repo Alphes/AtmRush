@@ -3,7 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collect
+  - Collected
+  - Obstacle
+  - Parent
+  - Collector
+  - ATM
+  - Collectable
+  - Converter
+  - Wheelbarrow
+  - Money
+  - CollectedMoney
+  - Pivot
+  - Man
+  - Golden
+  - Diamond
   layers:
   - Default
   - TransparentFX
