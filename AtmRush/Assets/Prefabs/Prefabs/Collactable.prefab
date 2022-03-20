@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 6788495726059878382, guid: ee7501fd5abdbea4bbee78651534a97d, type: 3}
-  movementDelay: 100
 --- !u!65 &3708331594898717799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61,8 +60,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.73737043, y: 0.34992474, z: 0.4110961}
-  m_Center: {x: 0.11970678, y: 0.15340129, z: -0.065598726}
+  m_Size: {x: 0.73737043, y: 0.34992477, z: 0.32196215}
+  m_Center: {x: 0.11970677, y: 0.15340129, z: -0.110165685}
 --- !u!54 &18971852559154669
 Rigidbody:
   m_ObjectHideFlags: 0
