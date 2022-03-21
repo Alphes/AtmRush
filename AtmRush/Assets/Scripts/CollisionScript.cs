@@ -16,6 +16,11 @@ public class CollisionScript : MonoBehaviour
      
     }
 
+    private void Update()
+    {
+        
+    }
+
     public IEnumerator MakeObjectBigger()
     {
         for (int i = List.instance.collactable.Count - 1; i >= 0; i--)
@@ -38,6 +43,7 @@ public class CollisionScript : MonoBehaviour
             transform.position = newPos;
             gameObject.GetComponent<BoxCollider>().isTrigger = false;
             gameObject.transform.parent = Player.transform;
+          ///  gameObject.AddComponent<Collectable>();
             
             gameObject.tag = "Money";
             List.instance.collactable.Add(gameObject);
@@ -48,13 +54,13 @@ public class CollisionScript : MonoBehaviour
         {
             if (gameObject.GetComponent<BoxCollider>().isTrigger == true)
             {
-               // Debug.Log("Nigggaaaaa")
                 Vector3 newPos;
                 newPos = List.instance.collactable[List.instance.collactable.Count - 1].transform.position;
                 newPos += Vector3.forward;
                 transform.position = newPos;
                 gameObject.GetComponent<BoxCollider>().isTrigger = false;
                 gameObject.transform.parent = Player.transform;
+              //  gameObject.AddComponent<Collectable>();
                 gameObject.tag = "Money";     
                 List.instance.collactable.Add(gameObject);
                 StartCoroutine(MakeObjectBigger());
