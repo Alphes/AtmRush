@@ -14,10 +14,11 @@ public class CameraFollow : MonoBehaviour
         offset = camTransform.position - target.position;
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
-        Vector3 targetPosition = target.position + offset;
-        camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
+      //  Vector3 targetPosition = target.position + offset;
+     //   camTransform.position = Vector3.Lerp(transform.position, targetPosition, ref velocity, SmoothTime);
+        camTransform.position = Vector3.Lerp(camTransform.position, target.position + offset, Time.deltaTime);
         //transform.LookAt(target);
     }
 }
